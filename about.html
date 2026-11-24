@@ -19,13 +19,13 @@
 
     <header class="motion-header" id="page-header">
       <div class="motion-header__inner shell">
-        <a class="wordmark" href="index.html#top" aria-label="UNMEGH CAPITAL home">UNMEGH<span></span>CAPITAL</a>
+        <a class="wordmark" href="index.html" aria-label="UNMEGH CAPITAL home"> <span>U</span>NMEGH &nbsp; <span>C</span>APITAL</a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
           <span></span><span></span><span class="sr-only">Open navigation</span>
         </button>
         <nav class="motion-nav" id="site-menu" aria-label="Main navigation">
           <a href="about.html" aria-current="page">About Us</a>
-          <a href="about2.html">Services</a>
+          <a href="index.html#services">Services</a>
           <a href="index.html#approach">Approach</a>
           <a href="index.html#insights">Insights</a>
           <a href="index.html#contact">Contact</a>
@@ -39,7 +39,7 @@
         <div class="shell about-hero__grid">
           <div class="about-hero__copy" data-reveal>
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">&rsaquo;</span><span aria-current="page">About Us</span></nav>
-            <h1 id="about-title">About<br>UNMEGH<i class="heading-dot"><span></span></i> CAPITAL</h1>
+        <a class="wordmark" href="#top" aria-label="UNMEGH CAPITAL home"> <span>U</span>NMEGH &nbsp; <span>C</span>APITAL</a>
         <!-- <a class="wordmark" href="#top" aria-label="UNMEGH CAPITAL home">UNMEGH<span></span>CAPITAL</a> -->
 
             <p>Empowering Businesses. Structuring Capital. Creating Long-Term Value.</p>
@@ -111,15 +111,48 @@
           <a class="button button--primary" href="index.html#contact">Contact <b aria-hidden="true">&rarr;</b></a>
         </div>
       </section>
+        <section class="contact section section--dark" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact-grid">
+          <div class="contact-copy" data-reveal>
+            <p class="eyebrow">Contact</p><h2 id="contact-title">Speak to an advisor</h2>
+            <p>Tell us a little about what you need. A senior advisor from the right practice will reply within two working days.</p>
+            <dl class="contact-details"><div><dt>Phone</dt><dd><a href="tel:+918411027000">+91 84110 27000</a></dd></div><div><dt>Email</dt><dd><a href="mailto:connect@unmeghcapital.com">connect@unmeghcapital.com</a></dd></div><div><dt>Address</dt><dd>
+              03, Hariom, Near Vitthal Mandir, Nandanvannagar, Savedi, Ahilyanagar 414003 Maharashtra
+              <section class="contact-map">
+  <div class="contact-map__container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d17501.09181695616!2d74.72070186121489!3d19.149651890731576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2sin!4v1795507110536!5m2!1sen!2sin"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+  </div>
+</section></dd></div></dl>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate data-reveal>
+            <div><label for="f-name">Full name *</label><input id="f-name" name="name" autocomplete="name" required /><p class="form-error" id="e-name"></p></div>
+            <div><label for="f-org">Organisation</label><input id="f-org" name="org" autocomplete="organization" /></div>
+            <div><label for="f-email">Email *</label><input id="f-email" name="email" type="email" autocomplete="email" required /><p class="form-error" id="e-email"></p></div>
+            <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" /></div>
+            <div class="contact-form__full"><label for="f-svc">Service of interest *</label><select id="f-svc" name="svc" required><option value="">Choose a service</option><option value="corporate-finance">Corporate Finance</option><option value="ma-advisory">M&amp;A Advisory</option><option value="valuation">Valuation</option><option value="other">Not sure yet</option></select><p class="form-error" id="e-svc"></p></div>
+            <div class="contact-form__full"><label for="f-msg">How can we help?</label><textarea id="f-msg" name="msg"></textarea></div>
+            <div class="contact-form__full"><button class="button button--primary" type="submit">Send enquiry <b aria-hidden="true">&rarr;</b></button></div>
+            <p class="form-message contact-form__full" id="form-message" role="status"></p>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-      <div class="shell footer-grid">
-        <div class="footer-brand"><a class="wordmark wordmark--light" href="index.html#top">UNMEGH<span></span>CAPITAL</a><p>Independent corporate finance, M&amp;A and valuation advisory.</p><p><a href="mailto:connect@unmeghcapital.com">unmeghcapital@gmail.com</a><br /><a href="tel:+918411027000">+91 84110 27000</a><br /><a href="https://www.unmeghcapital.com">www.unmeghcapital.com</a></p></div>
-        <div><h2>Services</h2><a href="index.html#services" data-service="corporate-finance">Corporate Finance</a><a href="index.html#services" data-service="ma-advisory">M&amp;A Advisory</a><a href="index.html#services" data-service="valuation">Valuation</a></div>
-        <div><h2>Firm</h2><a href="about.html">About Us</a><a href="index.html#approach">Approach</a><a href="index.html#insights">Insights</a><a href="index.html#contact">Contact</a></div>
-      </div>
-      <div class="shell footer-legal"><p>&copy; 2026 UNMEGH CAPITAL.</p><a class="back-to-top" href="#top" aria-label="Back to top">&uarr;</a></div>
+      <!-- <div class="shell footer-grid">
+        <div class="footer-brand"><a class="wordmark wordmark--light" href="#top">UNMEGH<span></span>CAPITAL</a><p>Independent corporate finance, M&amp;A and valuation advisory.</p><p><a href="mailto:connect@unmeghcapital.com">connect@unmeghcapital.com</a><br /><a href="tel:+918411027000">+91 84110 27000</a><br /><a href="https://www.unmeghcapital.com">www.unmeghcapital.com</a></p></div>
+        <div><h2>Services</h2><a href="#services" data-service="corporate-finance">Corporate Finance</a><a href="#services" data-service="ma-advisory">M&amp;A Advisory</a><a href="#services" data-service="valuation">Valuation</a></div>
+        <div><h2>Firm</h2><a href="about.html">About Us</a><a href="#approach">Approach</a><a href="#insights">Insights</a><a href="#contact">Contact</a></div>
+      </div> -->
+      <!-- <div class="shell footer-legal"><p>&copy; 2026 UNMEGH CAPITAL.</p><a class="back-to-top" href="#top" aria-label="Back to top">&uarr;</a></div> -->
       <div class="footer-ghost" aria-hidden="true">UNMEGH CAPITAL</div>
     </footer>
 
