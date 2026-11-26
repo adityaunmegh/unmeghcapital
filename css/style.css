@@ -965,7 +965,7 @@ body.motion-site {
 .contact::after { position: absolute; right: -16vw; bottom: -20vw; width: min(55vw, 650px); aspect-ratio: 1; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; box-shadow: 0 0 0 60px transparent, 0 0 0 61px rgba(255,255,255,.11), 0 0 0 120px transparent, 0 0 0 121px rgba(255,255,255,.08); content: ""; pointer-events: none; }
 .contact-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr); gap: clamp(44px, 9vw, 140px); }
 .contact .eyebrow { color: var(--accent-light); }
-.contact h2 { max-width: 18ch; margin: 0 0 22px; color: #fff; font-size:38px; font-weight: 700;text-transform: uppercase; }
+.contact h2 { margin: 0 0 22px; color: #fff; font-size: clamp(1.3rem, 1.9vw, 1.75rem); font-weight: 700; text-transform: uppercase; white-space: nowrap; }
 .contact-copy > p:not(.eyebrow) { max-width: 43ch; margin-bottom: 0; color: rgba(255,255,255,.72); font-size: 1rem; line-height: 1.7; }
 .contact-details { margin: 34px 0 0; }
 .contact-details div { padding: 14px 0; border-top: 1px solid rgba(255,255,255,.18); }
