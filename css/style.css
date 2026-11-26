@@ -937,7 +937,6 @@ body.motion-site {
 .hero-facts strong { color: var(--text); font-size: .78rem; font-weight: 800; line-height: 1.35; letter-spacing: .08em; text-transform: uppercase; }
 .hero-facts span, .hero-facts a { color: var(--muted); font-size: .92rem; font-weight: 600; line-height: 1.55; }
 .hero-facts a:hover { color: var(--accent-dark); }
-.home-hero__watermark { right: -120px; bottom: -120px; width: min(54vw, 620px); opacity: .18; }
 
 .practice-copy { align-self: end; }
 .practice-copy .practice-client { margin-bottom: 11px; color: var(--accent-dark) !important; font-size: .78rem !important; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
