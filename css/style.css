@@ -908,7 +908,7 @@ body.motion-site {
   .hero-illustration__line { animation: none; stroke-dashoffset: 0; }
   .hero-illustration__pulse { animation: none; opacity: 0; }
 }
-.header-cta { min-height: 38px; padding-inline: 16px; font-size: .78rem; gap: 7px; }
+.header-cta { min-height: 38px; padding-inline: 30px; font-size: .78rem; gap: 7px; }
 .home-hero h1 {
   max-width: 18ch;
   margin: 0 0 25px;
