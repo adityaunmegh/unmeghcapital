@@ -763,11 +763,15 @@ body.motion-site {
 .menu-toggle { display: none; }
 
 /* Capability marquee */
-.capability-marquee {   position: relative; z-index: 4; overflow: hidden; border-block: 1px solid var(--line);background: var(--accent-gradient); background-size: 180% 100%; box-shadow: 0 9px 20px rgba(168, 12, 20, .18);  }
+.capability-marquee { position: relative; z-index: 4; overflow: hidden; background: var(--text); }
+.capability-marquee::before, .capability-marquee::after { position: absolute; z-index: 1; top: 0; bottom: 0; width: clamp(40px, 8vw, 140px); content: ""; pointer-events: none; }
+.capability-marquee::before { left: 0; background: linear-gradient(90deg, var(--text), transparent); }
+.capability-marquee::after { right: 0; background: linear-gradient(270deg, var(--text), transparent); }
 .capability-marquee__track { display: flex; width: max-content; animation: marquee 40s linear infinite; }
 .capability-marquee:hover .capability-marquee__track { animation-play-state: paused; }
-.capability-marquee__track > div { display: flex; align-items: center; min-width: max-content; height: 28px; color:#fff; font-size: 14px; font-weight: 1000; letter-spacing: .04em; text-transform: uppercase; white-space: pre; }
-.capability-marquee i { margin: 0 27px; color:#fff; font-size: .58rem; font-style: normal; }
+.capability-marquee__track > div { display: flex; align-items: center; min-width: max-content; height: 40px; color: rgba(255,255,255,.62); font-size: 13px; font-weight: 400; letter-spacing: .02em; white-space: pre; }
+.capability-marquee b { margin-right: 10px; color: #fff; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.capability-marquee i { width: 6px; height: 6px; margin: 0 30px; border-radius: 50%; background: var(--accent-light); box-shadow: 0 0 0 3px rgba(255,77,84,.18), 0 0 10px rgba(255,77,84,.7); }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 /* Approach */
