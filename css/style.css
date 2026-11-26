@@ -911,6 +911,11 @@ body.motion-site {
   font-weight: 500;
   line-height: 1.7;
 }
+.home-hero__copy > p.home-hero__support {
+  margin-top: 14px;
+  font-size: clamp(.95rem, .9rem + .2vw, 1.05rem);
+  font-weight: 400;
+}
 .home-hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .button--outline { border-color: var(--text); color: var(--text); background: transparent; }
 .button--outline:hover { border-color: var(--accent); color: #fff; background: var(--accent); }
