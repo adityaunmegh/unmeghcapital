@@ -977,6 +977,13 @@ body.motion-site {
 .contact-form select { color: #fff; }.contact-form select option { color: var(--text); background: #fff; }.contact-form textarea { min-height: 114px; resize: vertical; }
 .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { border-color: var(--accent-light); box-shadow: 0 0 0 3px rgba(255,77,84,.2); }
 .contact-form__full { grid-column: 1 / -1; }
+@media (min-width: 1024px) {
+  .contact-form { height: auto; align-self: stretch; grid-template-rows: auto auto auto 1fr auto auto; }
+  .contact-form__message { display: flex; flex-direction: column; }
+  .contact-form__message textarea { flex: 1; }
+  .contact-details > div:last-child { padding-bottom: 0; }
+  .contact-details .contact-map { padding-bottom: 0; }
+}
 .form-error { min-height: 16px; margin: 4px 0 0; color: var(--accent-light); font-size: .72rem; font-weight: 700; }.form-message { margin: 0; color: #fff; font-size: .8rem; font-weight: 600; line-height: 1.55; }
 .contact-form .button--primary { border: 0; }
 
