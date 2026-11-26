@@ -910,6 +910,7 @@ body.motion-site {
   .hero-illustration__pulse { animation: none; opacity: 0; }
 }
 .header-cta { min-height: 38px; padding-inline: 30px; font-size: .78rem; gap: 7px; }
+@media (min-width: 1360px) { .header-cta { min-height: 48px; padding-inline: 34px; font-size: .92rem; gap: 9px; } }
 .home-hero h1 {
   max-width: 18ch;
   margin: 0 0 25px;
