@@ -905,10 +905,13 @@ body.motion-site {
 .hero-illustration__line { stroke-dasharray: 520; stroke-dashoffset: 520; animation: hero-draw 2.2s .4s var(--ease) forwards; }
 .hero-illustration__pulse { transform-box: fill-box; transform-origin: center; animation: hero-ping 2s ease-out infinite; }
 @keyframes hero-draw { to { stroke-dashoffset: 0; } }
+.hero-illustration__float { animation: hero-float 6s ease-in-out infinite; }
+@keyframes hero-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
 @keyframes hero-ping { 0% { transform: scale(1); opacity: .5; } 100% { transform: scale(3.2); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) {
   .hero-illustration__line { animation: none; stroke-dashoffset: 0; }
   .hero-illustration__pulse { animation: none; opacity: 0; }
+  .hero-illustration__float { animation: none; }
 }
 .header-cta { min-height: 38px; padding-inline: 30px; font-size: .78rem; gap: 7px; }
 @media (min-width: 1360px) { .header-cta { min-height: 48px; padding-inline: 34px; font-size: .92rem; gap: 9px; } }
