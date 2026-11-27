@@ -952,11 +952,11 @@ body.motion-site {
 .practice-details li + li { margin-top: 6px; }
 
 .route-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--line); }
-.route-grid article { position: relative; min-height: 275px; padding: 31px clamp(17px, 2.6vw, 38px) 24px; border-right: 1px solid var(--line); }
+.route-grid article { position: relative; padding: 31px clamp(17px, 2.6vw, 38px) 24px; border-right: 1px solid var(--line); }
 .route-grid article:last-child { border-right: 0; }
 .route-grid article::before { position: absolute; top: -7px; left: -1px; width: 13px; height: 13px; border-radius: 50%; content: ""; background: var(--accent); }
 .route-grid article:last-child::before { box-shadow: 0 0 0 7px rgba(196, 18, 25, .12); }
-.route-grid span { display: block; margin-bottom: 66px; color: var(--accent-dark); font-size: .74rem; font-weight: 800; letter-spacing: .1em; }
+.route-grid span { display: block; margin-bottom: 16px; color: var(--accent-dark); font-size: .74rem; font-weight: 800; letter-spacing: .1em; }
 .route-grid h3 { margin: 0 0 11px; color: var(--text); font-size: clamp(1.15rem, 1.02rem + .7vw, 1.55rem); line-height: 1.18; letter-spacing: -.03em; }
 .route-grid p { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.65; }
 
@@ -1018,7 +1018,7 @@ body.motion-site {
   .hero-facts li { grid-template-columns: 1fr; gap: 5px; padding: 15px 0; }
   .business-panel { grid-template-columns: 1fr; gap: 15px; }
   .practice-details { grid-column: auto; grid-template-columns: 1fr; }.practice-details ul { font-size: .8rem; }
-  .route-grid { grid-template-columns: 1fr; }.route-grid article, .route-grid article:nth-child(2) { min-height: 0; border-right: 0; border-top: 1px solid var(--line); }.route-grid article:first-child { border-top: 0; }.route-grid span { margin-bottom: 34px; }
+  .route-grid { grid-template-columns: 1fr; }.route-grid article, .route-grid article:nth-child(2) { min-height: 0; border-right: 0; border-top: 1px solid var(--line); }.route-grid article:first-child { border-top: 0; }.route-grid span { margin-bottom: 16px; }
   .insight-grid { grid-template-columns: 1fr; }.insight-grid article, .insight-grid article:last-child { grid-column: auto; min-height: 0; }
   .contact-form { grid-template-columns: 1fr; padding: 24px 19px; }.contact-form__full { grid-column: auto; }
   .site-footer .footer-grid { grid-template-columns: 1fr 1fr; }.site-footer .footer-brand { grid-column: 1 / -1; }
