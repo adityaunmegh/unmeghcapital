@@ -892,6 +892,7 @@ body.motion-site {
   overflow: hidden;
   background: linear-gradient(135deg, rgba(255, 255, 255, .78), rgba(255, 255, 255, .4));
 }
+@media (min-width: 1240px) { .home-hero.section { padding-top: clamp(100px, 7.2vw, 116px); padding-bottom: clamp(80px, 7vw, 112px); } .home-hero { min-height: 0; } }
 .home-hero__grid {
   display: grid;
   grid-template-columns: minmax(0, 1.12fr) minmax(300px, .88fr);
