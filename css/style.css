@@ -1132,8 +1132,8 @@ body.motion-site {
 .scenario-grid li { min-height: 162px; padding: 25px clamp(14px, 2.1vw, 30px); border-right: 1px solid rgba(255,255,255,.18); }
 .scenario-grid li:last-child { border-right: 0; }
 .scenario-grid svg, .strength-icon svg { width: 25px; height: 25px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px; }
-.scenario-grid svg { display: block; margin-bottom: 38px; color: var(--accent-light); }
-.scenario-grid span { display: block; color: rgba(255,255,255,.82); font-size: .82rem; font-weight: 700; line-height: 1.45; }
+.scenario-grid svg { display: block; width: 30px; height: 30px; margin-bottom: 34px; color: var(--accent-light); }
+.scenario-grid span { display: block; color: rgba(255,255,255,.86); font-size: clamp(1rem, .9rem + .4vw, 1.2rem); font-weight: 700; line-height: 1.35; }
 
 .about-strengths { background: linear-gradient(180deg, transparent, rgba(255,255,255,.32)); }
 .strength-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 2vw, 28px); }
