@@ -943,6 +943,8 @@ body.motion-site {
 .home-hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 .button--outline { border-color: var(--text); color: var(--text); background: transparent; }
 .button--outline:hover { border-color: var(--accent); color: #fff; background: var(--accent); }
+.home-hero__actions .button { transition: transform .28s var(--ease), box-shadow .28s ease, background-color .28s ease, color .28s ease, border-color .28s ease; }
+.home-hero__actions .button--primary:hover, .home-hero__actions .button--primary:focus-visible { border-color: var(--accent); color: var(--accent); background: #fff; box-shadow: 0 9px 20px rgba(168, 12, 20, .12); }
 .hero-facts { position: relative; z-index: 1; margin: 0; padding: 0; border-top: 1px solid var(--line); list-style: none; }
 .hero-facts li { display: grid; grid-template-columns: minmax(108px, .75fr) minmax(0, 1.25fr); gap: 18px; padding: 18px 0; border-bottom: 1px solid var(--line); }
 .hero-facts strong { color: var(--text); font-size: .78rem; font-weight: 800; line-height: 1.35; letter-spacing: .08em; text-transform: uppercase; }
