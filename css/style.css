@@ -917,7 +917,7 @@ body.motion-site {
   color: var(--text);
   font-size: clamp(38px, 3.5vw, 48px);
   font-weight: 800;
-  line-height: 48px;
+  line-height: 1.25;
   letter-spacing: -0.05em;
 
 }
