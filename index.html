@@ -56,59 +56,45 @@
             </div>
           </div>
           <div class="home-hero__side" data-reveal>
-            <svg class="hero-illustration" viewBox="0 0 520 440" role="img" aria-label="Illustration of a buyer and a seller connected through UNMEGH CAPITAL's advisory">
+            <svg class="hero-illustration" viewBox="0 0 520 440" role="img" aria-label="Illustration of the capital structure: senior debt, mezzanine and equity layers, with advisory across all of them">
               <defs>
-                <radialGradient id="hi-glow" cx="50%" cy="45%" r="55%">
-                  <stop offset="0" stop-color="#ffffff" />
-                  <stop offset=".6" stop-color="#eef3fb" />
-                  <stop offset="1" stop-color="#f3f6fb" stop-opacity="0" />
-                </radialGradient>
-                <linearGradient id="hi-red" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0" stop-color="#142033" />
-                  <stop offset="1" stop-color="#1f4482" />
-                </linearGradient>
-                <filter id="hi-shadow" x="-20%" y="-20%" width="140%" height="160%">
-                  <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#142033" flood-opacity=".10" />
-                </filter>
+                <linearGradient id="hs-red" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ef4352" /><stop offset="1" stop-color="#c41219" /></linearGradient>
+                <linearGradient id="hs-navy" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f5596" /><stop offset="1" stop-color="#1f3b73" /></linearGradient>
+                <linearGradient id="hs-light" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" /><stop offset="1" stop-color="#e6ebf3" /></linearGradient>
+                <linearGradient id="hs-pill" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#142033" /><stop offset="1" stop-color="#1f4482" /></linearGradient>
+                <radialGradient id="hs-shadow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#142033" stop-opacity=".22" /><stop offset="1" stop-color="#142033" stop-opacity="0" /></radialGradient>
+                <filter id="hs-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="22" /></filter>
+                <filter id="hs-drop" x="-20%" y="-30%" width="140%" height="180%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#142033" flood-opacity=".18" /></filter>
               </defs>
-              <ellipse cx="260" cy="220" rx="250" ry="200" fill="url(#hi-glow)" />
-              <g stroke="#142033" stroke-opacity=".05">
-                <path d="M40 120H480M40 200H480M40 280H480M40 360H480" />
+              <ellipse cx="260" cy="250" rx="228" ry="128" fill="none" stroke="#8a97ad" stroke-opacity=".55" stroke-width="1.4" stroke-dasharray="4 6" />
+              <circle cx="60" cy="168" r="4" fill="#c41219" /><circle cx="452" cy="96" r="4" fill="#1f3b73" /><circle cx="96" cy="356" r="3.5" fill="#1f3b73" /><circle cx="470" cy="328" r="3.5" fill="#c41219" />
+              <ellipse cx="260" cy="410" rx="160" ry="16" fill="url(#hs-shadow)" />
+              <polygon points="135,273 260,338 260,370 135,305" fill="#dfe5ef" /><polygon points="260,338 385,273 385,305 260,370" fill="#cdd6e4" /><polygon points="260,208 385,273 260,338 135,273" fill="url(#hs-light)" stroke="#ffffff" stroke-opacity=".6" stroke-width="1.2" />
+              <polygon points="135,233 260,298 260,330 135,265" fill="#18325f" /><polygon points="260,298 385,233 385,265 260,330" fill="#122548" /><polygon points="260,168 385,233 260,298 135,233" fill="url(#hs-navy)" stroke="#4a6fae" stroke-opacity=".6" stroke-width="1.2" />
+              <ellipse cx="260" cy="190" rx="120" ry="48" fill="#e8384a" opacity=".45" filter="url(#hs-blur)" />
+              <g class="hero-illustration__float">
+                <polygon points="135,193 260,258 260,290 135,225" fill="#b0101a" /><polygon points="260,258 385,193 385,225 260,290" fill="#8f0c14" /><polygon points="260,128 385,193 260,258 135,193" fill="url(#hs-red)" stroke="#ff8a94" stroke-opacity=".6" stroke-width="1.2" />
+                <circle class="hero-illustration__pulse" cx="260" cy="128" r="5" fill="#c41219" />
+                <circle cx="260" cy="128" r="5" fill="#c41219" stroke="#ffffff" stroke-width="2" />
               </g>
-              <g fill="none" stroke="#1b3a6b" stroke-opacity=".45" stroke-width="2" stroke-dasharray="4 7" stroke-linecap="round">
-                <path d="M115 232C115 300 180 345 218 348" />
-                <path d="M405 232C405 300 340 345 302 348" />
+              <path d="M260 88V122" stroke="#142033" stroke-width="1.6" stroke-dasharray="2 4" stroke-linecap="round" />
+              <g filter="url(#hs-drop)"><rect x="172" y="40" width="176" height="48" rx="24" fill="url(#hs-pill)" /></g>
+              <path d="M200 54l2.6 7.4 7.4 2.6-7.4 2.6-2.6 7.4-2.6-7.4-7.4-2.6 7.4-2.6z" fill="#ffffff" />
+              <text x="272" y="69" fill="#ffffff" font-size="14" font-weight="800" letter-spacing="3" text-anchor="middle">ADVISORY</text>
+              <g fill="none" stroke="#8a97ad" stroke-width="1.4" stroke-dasharray="2 4" stroke-linecap="round">
+                <path d="M118 193H135" /><path d="M385 250H402" /><path d="M385 290H402" />
               </g>
-              <path class="hero-illustration__line" d="M200 160H320" fill="none" stroke="#1b3a6b" stroke-width="3" stroke-linecap="round" />
-              <circle class="hero-illustration__pulse" cx="260" cy="160" r="10" fill="#1b3a6b" />
-              <rect x="249" y="149" width="22" height="22" rx="4" fill="url(#hi-red)" stroke="#ffffff" stroke-width="3" transform="rotate(45 260 160)" />
-              <g filter="url(#hi-shadow)">
-                <rect x="30" y="90" width="170" height="140" rx="18" fill="#ffffff" />
-                <rect x="320" y="90" width="170" height="140" rx="18" fill="#ffffff" />
+              <circle cx="135" cy="193" r="3" fill="#c41219" /><circle cx="385" cy="250" r="3" fill="#1f3b73" /><circle cx="385" cy="290" r="3" fill="#c41219" />
+              <g font-weight="800" letter-spacing="2.4" font-size="13" fill="#142033">
+                <text x="112" y="190" text-anchor="end">EQUITY</text>
+                <text x="408" y="247">MEZZANINE</text>
+                <text x="408" y="287">SENIOR DEBT</text>
               </g>
-              <circle cx="66" cy="125" r="19" fill="#1b3a6b" fill-opacity=".1" />
-              <rect x="56" y="120" width="20" height="14" rx="3" fill="#1b3a6b" />
-              <rect x="62" y="115" width="8" height="6" rx="2" fill="none" stroke="#1b3a6b" stroke-width="2" />
-              <circle cx="356" cy="125" r="19" fill="#1b3a6b" fill-opacity=".1" />
-              <rect x="348" y="113" width="16" height="22" rx="2" fill="#1b3a6b" />
-              <g fill="#ffffff"><rect x="351" y="117" width="4" height="4" /><rect x="357" y="117" width="4" height="4" /><rect x="351" y="124" width="4" height="4" /><rect x="357" y="124" width="4" height="4" /></g>
-              <g fill="#142033" font-size="15" font-weight="800" letter-spacing="2.5">
-                <text x="94" y="131">BUYER</text>
-                <text x="384" y="131">SELLER</text>
+              <g font-size="11" fill="#5d6b82">
+                <text x="112" y="207" text-anchor="end">Growth · PE · IPO</text>
+                <text x="408" y="264">Structured · hybrid</text>
+                <text x="408" y="304">Term loans · NCDs</text>
               </g>
-              <g fill="#142033">
-                <rect x="50" y="162" width="124" height="8" rx="4" fill-opacity=".12" />
-                <rect x="50" y="180" width="92" height="8" rx="4" fill-opacity=".08" />
-                <rect x="340" y="162" width="124" height="8" rx="4" fill-opacity=".12" />
-                <rect x="340" y="180" width="92" height="8" rx="4" fill-opacity=".08" />
-              </g>
-              <rect x="50" y="200" width="58" height="14" rx="7" fill="#1b3a6b" fill-opacity=".15" />
-              <rect x="340" y="200" width="58" height="14" rx="7" fill="#1b3a6b" fill-opacity=".15" />
-              <g filter="url(#hi-shadow)">
-                <rect x="168" y="322" width="184" height="52" rx="26" fill="url(#hi-red)" />
-              </g>
-              <path d="M207 340l2.6 5.4 5.4 2.6-5.4 2.6-2.6 5.4-2.6-5.4-5.4-2.6 5.4-2.6z" fill="#ffffff" />
-              <text x="270" y="353" fill="#ffffff" font-size="14" font-weight="800" letter-spacing="2.5" text-anchor="middle">ADVISORY</text>
             </svg>
           </div>
         </div>
